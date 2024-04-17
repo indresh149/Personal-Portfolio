@@ -8,10 +8,16 @@ import Particle from "../Particle";
 import TicTacToe from "../../Assets/Projects/tictactoe.png";
 //import suicide from "../../Assets/Projects/suicide.png";
 //import bitsOfCode from "../../Assets/Projects/blog.png";
+import { Helmet } from "react-helmet";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Projects | Indresh Goswami</title>
+        <link rel="canonical" href="https://indreshgoswami.tech/" />
+      </Helmet>
       <Particle />
       <Container>
         <h1 className="project-heading">
@@ -32,7 +38,7 @@ function Projects() {
             />
           </Col>
 
-        {/*  <Col md={4} className="project-card">
+          {/*  <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}

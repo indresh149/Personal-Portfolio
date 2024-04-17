@@ -4,11 +4,17 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home | Indresh Goswami</title>
+          <link rel="canonical" href="https://indreshgoswami.tech/" />
+        </Helmet>
         <Particle />
         <Container className="home-content">
           <Row>

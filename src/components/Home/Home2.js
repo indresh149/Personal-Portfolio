@@ -8,10 +8,16 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home | Indresh Goswami</title>
+        <link rel="canonical" href="https://indreshgoswami.tech/" />
+      </Helmet>
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -32,9 +38,7 @@ function Home2() {
               <i>
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Mobile App Development.
-                </b>
+                <b className="purple">Mobile App Development.</b>
               </i>
               <br />
               <br />
