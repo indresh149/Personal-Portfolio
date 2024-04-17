@@ -6,7 +6,9 @@ import pdf from "../../Assets/../Assets/Indresh_Goswami_Resume-GU.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { Helmet } from "react-helmet";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -18,6 +20,11 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
+      <Helmet>
+      <meta charSet="utf-8" />
+      <title>Resume | Indresh Goswami</title>
+      <link rel="canonical" href="https://indreshgoswami.tech/" />
+    </Helmet>
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
