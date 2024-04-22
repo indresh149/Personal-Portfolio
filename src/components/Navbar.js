@@ -94,6 +94,16 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
+                href="https://topmate.io/indreshgoswami"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImBlog style={{ marginBottom: "2px" }} /> Connect
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
                 href="https://github.com/indresh149"
                 target="_blank"
                 rel="noreferrer"
