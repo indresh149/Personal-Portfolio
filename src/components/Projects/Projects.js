@@ -7,7 +7,7 @@ import Particle from "../Particle";
 //import editor from "../../Assets/Projects/codeEditor.png";
 import TicTacToe from "../../Assets/Projects/tictactoe.png";
 //import suicide from "../../Assets/Projects/suicide.png";
-//import bitsOfCode from "../../Assets/Projects/blog.png";
+import taskManagement from "../../Assets/Projects/task-management.jpg";
 import { Helmet } from "react-helmet";
 
 function Projects() {
@@ -38,18 +38,18 @@ function Projects() {
             />
           </Col>
 
-          {/*  <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={taskManagement}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink=""
-              demoLink=""
+              title="Task Management"
+              description="A simple task management web app build with react.js. Add, delete and mark task as completed. The app uses framer motion for animations."
+              ghLink="https://github.com/indresh149/Task-Management-WebApp"
+              demoLink="https://task-management-web-app-woad.vercel.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/*  <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
               isBlog={false}
