@@ -32,7 +32,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "SThink More Code Less!"{" "}
+            "Think More Code Less!"{" "}
           </p>
           <footer className="blockquote-footer">Indresh</footer>
         </blockquote>
