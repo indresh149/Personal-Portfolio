@@ -7,6 +7,10 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { HiAcademicCap } from "react-icons/hi";
+
+
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -94,9 +98,12 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://topmate.io/indreshgoswami"
-                target="_blank"
-                rel="noreferrer"
+                // href="https://topmate.io/indreshgoswami"
+                // target="_blank"
+                // rel="noreferrer"
+                as={Link}
+                to="/connect"
+                onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Connect
               </Nav.Link>
@@ -104,11 +111,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://github.com/indresh149"
+                href="https://topmate.io/indreshgoswami"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <HiAcademicCap style={{ marginBottom: "2px" }} /> Guidance
               </Nav.Link>
             </Nav.Item>
 
