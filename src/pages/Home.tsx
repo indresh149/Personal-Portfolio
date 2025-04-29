@@ -26,7 +26,7 @@ const Home = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              I'm <span className="gradient-text">Your Name</span>
+              I'm <span className="gradient-text">Indresh Goswami</span>
             </h1>
 
             <div className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-200 h-16 sm:h-20">
