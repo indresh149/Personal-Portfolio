@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Twitter } from 'lucide-react';
+import { Heart, Github, Linkedin, Twitter ,Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           
           <div className="flex space-x-6">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/indresh149" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -22,7 +22,7 @@ const Footer = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/indreshgoswami/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="https://twitter.com/yourusername" 
+              href="https://x.com/IndreshGoswami5" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -39,12 +39,22 @@ const Footer = () => {
             >
               <Twitter size={24} />
             </a>
+
+            <a 
+              href="https://www.instagram.com/indreshgoswami5/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label="Twitter"
+            >
+              <Instagram  size={24} />
+            </a>
           </div>
         </div>
         
         <div className="mt-8 border-t border-gray-800 pt-8 md:flex md:items-center md:justify-between">
           <div className="text-center md:text-left">
-            <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Indresh Goswami. All rights reserved.</p>
           </div>
         </div>
       </div>

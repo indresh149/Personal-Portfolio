@@ -1,7 +1,14 @@
-import { TypeAnimation } from 'react-type-animation';
-import { motion } from 'framer-motion';
-import { ArrowRight, Code, Database, Globe, Palette, Server } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  Code,
+  Database,
+  Palette,
+  Server,
+  Smartphone,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,7 +17,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 sm:py-32">
         <div className="absolute inset-0 z-0 animated-gradient-bg opacity-30"></div>
         <div className="absolute inset-0 z-10 bg-dark-950/40 backdrop-blur-[2px]"></div>
-        
+
         <div className="container mx-auto px-4 relative z-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -20,8 +27,7 @@ const Home = () => {
           >
             <div className="mb-6">
               <span className="text-lg sm:text-xl md:text-2xl font-medium text-gray-300">
-                Hi there!{' '}
-                <span className="inline-block animate-wave">👋</span>
+                Hi there! <span className="inline-block animate-wave">👋</span>
               </span>
             </div>
 
@@ -32,13 +38,13 @@ const Home = () => {
             <div className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-200 h-16 sm:h-20">
               <TypeAnimation
                 sequence={[
-                  'Software Developer',
+                  "Software Developer",
                   1000,
-                  'UI/UX Designer',
+                  "Full Stack Developer",
                   1000,
-                  'Mobile App Developer',
+                  "Mobile App Developer",
                   1000,
-                  'Backend Engineer',
+                  "Backend Engineer",
                   1000,
                 ]}
                 wrapper="span"
@@ -47,7 +53,7 @@ const Home = () => {
               />
             </div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.5 }}
@@ -70,48 +76,68 @@ const Home = () => {
           <h2 className="section-heading">
             My <span>Skills</span>
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <SkillCard 
+            <SkillCard
               icon={<Code />}
               title="Frontend Development"
-              description="Creating responsive, interactive user interfaces with modern frameworks like React, Vue, and Angular."
-              skills={['React', 'TypeScript', 'Tailwind CSS', 'Next.js']}
+              description="Creating responsive, interactive user interfaces with modern frameworks like React, Next.js and Angular."
+              skills={[
+                "React",
+                "JavaScript",
+                "TypeScript",
+                "Tailwind CSS",
+                "Next.js",
+                "Firebase",
+                "Redux",
+                "TanStack Query",
+              ]}
             />
-            
-            <SkillCard 
+
+            <SkillCard
+              icon={<Smartphone />}
+              title="Mobile Development"
+              description="Skilled in developing cross-platform and native mobile applications using Flutter, React Native, and Kotlin. Proficient in delivering and publishing apps to both the App Store and Google Play Store."
+              skills={[
+                "Flutter",
+                "React Native",
+                "Kotlin",
+                "Jetpack",
+                "Jetpack Compose",
+                "Firebase",
+                "MVVM architecture",
+                "Firebase Cloud Messaging",
+                "App Store",
+                "Play Store",
+              ]}
+            />
+
+            <SkillCard
               icon={<Server />}
               title="Backend Development"
               description="Building robust server-side applications and APIs with Node.js, Express, and various databases."
-              skills={['Node.js', 'Express', 'MongoDB', 'GraphQL']}
+              skills={["Node.js", "Express", "MongoDB", "REST API", "GraphQL"]}
             />
-            
-            <SkillCard 
-              icon={<Globe />}
-              title="Mobile Development"
-              description="Developing cross-platform mobile applications using Flutter and React Native."
-              skills={['Flutter', 'React Native', 'Firebase', 'App Store']}
-            />
-            
-            <SkillCard 
+
+            {/* <SkillCard
               icon={<Database />}
               title="Database Design"
               description="Designing and optimizing database schemas for various applications needs."
-              skills={['SQL', 'NoSQL', 'MongoDB', 'PostgreSQL']}
-            />
-            
-            <SkillCard 
+              skills={["SQL", "NoSQL", "MongoDB", "PostgreSQL"]}
+            /> */}
+
+            {/* <SkillCard
               icon={<Palette />}
               title="UI/UX Design"
               description="Creating intuitive and beautiful user interfaces and experiences."
-              skills={['Figma', 'Adobe XD', 'Sketch', 'Prototyping']}
-            />
-            
-            <SkillCard 
+              skills={["Figma", "Adobe XD", "Sketch", "Prototyping"]}
+            /> */}
+
+            <SkillCard
               icon={<Code />}
               title="DevOps"
-              description="Setting up CI/CD pipelines and managing cloud infrastructure."
-              skills={['AWS', 'Docker', 'GitHub Actions', 'Kubernetes']}
+              description="Setting up CI/CD pipelines and managing cloud infrastructure and deployment of frontend and backend projects."
+              skills={["AWS", "GCP", "GitHub Actions"]}
             />
           </div>
         </div>
@@ -129,7 +155,7 @@ interface SkillCardProps {
 
 const SkillCard = ({ icon, title, description, skills }: SkillCardProps) => {
   return (
-    <motion.div 
+    <motion.div
       whileHover={{ y: -5 }}
       className="card p-6 hover:shadow-2xl hover:shadow-primary-500/10"
     >
@@ -140,7 +166,7 @@ const SkillCard = ({ icon, title, description, skills }: SkillCardProps) => {
       <p className="text-gray-400 mb-4">{description}</p>
       <div className="flex flex-wrap gap-2 mt-auto">
         {skills.map((skill, index) => (
-          <span 
+          <span
             key={index}
             className="text-xs font-medium bg-dark-700 text-gray-300 px-2 py-1 rounded-full"
           >

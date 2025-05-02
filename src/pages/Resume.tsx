@@ -83,7 +83,7 @@ const ResumeViewer = () => {
 
 // Main Resume Page Component
 const Resume = () => {
-  const [resumeUrl] = useState('/path/to/your-resume.pdf'); // Replace with actual path to your resume
+  const [resumeUrl] = useState('/Indresh_Goswami_Resume.pdf'); // Replace with actual path to your resume
 
   return (
     <div className="page-container">
@@ -99,7 +99,7 @@ const Resume = () => {
       >
         <a 
           href={resumeUrl} 
-          download="YourName-Resume.pdf"
+          download="Indresh-Resume.pdf"
           className="btn btn-primary inline-flex items-center"
         >
           <Download size={18} className="mr-2" />
